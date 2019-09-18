@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char error[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	char error[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
 	perror(error);
 	return (1);
