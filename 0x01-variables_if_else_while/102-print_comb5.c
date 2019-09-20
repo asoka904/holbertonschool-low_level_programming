@@ -32,8 +32,31 @@ int main(void)
 				}
 				tmpU1 = '0';
 			}
-			tmpD1 = tmpD2;
-			tmpU1 = tmpU2 + 2;
+			if (tmpD2 == '9')
+			{
+				if (tmpU2 == '8')
+				{
+					break;
+				}
+				else
+				{
+					tmpU1 = tmpU2 + 2;
+					tmpD1 = '9';
+				}
+			}
+			else
+			{
+				if (tmpU2 == '9')
+				{
+					tmpD1 = tmpD2 + 1;
+					tmpU1 = '1';
+				}
+				else
+				{
+					tmpD1 = tmpD2;
+					tmpU1 = tmpU2 + 2;
+				}
+			}
 		}
 	}
 
