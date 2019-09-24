@@ -6,18 +6,27 @@
  */
 void times_table(void)
 {
-	int x, y;
+	int x, y, m;
 
 	for (x = 0; x < 10; x++)
 	{
 		for (y = 0; y < 10; y++)
 		{
-			_putchar((hour / 10) + 48);
-			_putchar((hour % 10) + 48);
-			_putchar(':');
-			_putchar((min / 10) + 48);
-			_putchar((min % 10) + 48);
-			_putchar('\n');
+			m = x * y;
+			if (y == 0)
+			{
+				_putchar('0');
+				continue;
+			}
+			_putchar(',');
+			_putchar(' ');
+
+			if (m / 10 == 0)
+				_putchar(' ');
+			else
+				_putchar((m / 10) + '0');
+			_putchar((m % 10) + '0');
 		}
+		_putchar('\n');
 	}
 }
