@@ -2,18 +2,15 @@
 
 /**
  * print_last_digit - Print the last digit of an integer.
- * @c: Integer to extract the last digit.
+ * @n: Integer to extract the last digit.
  * Return: Return the last digit of an integer.
  */
-int print_last_digit(int c)
+int print_last_digit(int n)
 {
-	int digit;
+	int digit = n % 10;
 
-	if (c < 0)
-		digit = (c * -1) % 10;
-	else
-		digit = c % 10;
-
+	if (n < 0)
+		digit = digit * -1;
 	_putchar(digit + 48);
 	return (digit);
 }
