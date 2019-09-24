@@ -6,14 +6,13 @@
  */
 int main(void)
 {
-	char cad[] = "Holberton";
+	char cad[] = "Holberton\n";
 	unsigned int i;
 
-	for (i = 0; i < sizeof(cad); i++)
+	for (i = 0; i < 10; i++)
 	{
 		_putchar(cad[i]);
 	}
-	_putchar('\n');
 
 	return (0);
 }
