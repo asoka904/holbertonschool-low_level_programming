@@ -1,7 +1,8 @@
 #include "holberton.h"
 
 /**
- * times_table print the tables of multiplication.
+ * times_table - print the tables of multiplication.
+ *
  * Return: Nothing
  */
 void times_table(void)
