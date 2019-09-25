@@ -33,7 +33,6 @@ int main(void)
 				tmpU1 = '0';
 			}
 			if (tmpD2 == '9')
-			{
 				if (tmpU2 == '8')
 				{
 					break;
@@ -43,9 +42,7 @@ int main(void)
 					tmpU1 = tmpU2 + 2;
 					tmpD1 = '9';
 				}
-			}
 			else
-			{
 				if (tmpU2 == '9')
 				{
 					tmpD1 = tmpD2 + 1;
@@ -56,10 +53,8 @@ int main(void)
 					tmpD1 = tmpD2;
 					tmpU1 = tmpU2 + 2;
 				}
-			}
 		}
 	}
-
 	putchar('\n');
 	return (0);
 }
