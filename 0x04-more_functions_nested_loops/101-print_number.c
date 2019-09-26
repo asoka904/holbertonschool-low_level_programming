@@ -1,24 +1,25 @@
 #include "holberton.h"
 
 /**
- * print_square - Prints a square
- * @size: Size of the square.
+ * print_number - Prints an integer.
+ * @n: the integer.
  */
 
-void print_square(int size)
+void print_number(int n)
 {
-	int col, line;
-
-	if (size <= 0)
+	if(n < 0)
 	{
-		_putchar('\n');
-		return;
+		_putchar('-');
+		n *= -1;
 	}
 
-	for (line = 0; line < size; line++)
+	if (n > 9)
 	{
-		for (col = 0; col < size; col++)
-			_putchar('#');
-		_putchar('\n');
+		print_number(n / 10);
+		_putchar ((n % 10) + '0');
+	}
+	else
+	{
+		_putchar(n + '0');
 	}
 }

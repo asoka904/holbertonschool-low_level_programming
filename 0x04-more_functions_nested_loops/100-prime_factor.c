@@ -10,7 +10,7 @@ int main(void)
 	long int fuck = 612852475143;
 	long int last, i;
 
-	for(i = 3; i <= (fuck / 3); i += 2)
+	for (i = 3; i <= (fuck / 3); i += 2)
 	{
 		if (fuck % i == 0)
 			last = i;
