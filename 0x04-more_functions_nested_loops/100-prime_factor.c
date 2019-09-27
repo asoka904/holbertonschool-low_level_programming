@@ -12,12 +12,10 @@ int main(void)
 	long int i = 3;
 
 	while (i < last)
-	{
 		if (last % i == 0)
 			last /= i;
 		else
 			i++;
-	}
 	printf("%li\n", last);
 
 	return (0);
