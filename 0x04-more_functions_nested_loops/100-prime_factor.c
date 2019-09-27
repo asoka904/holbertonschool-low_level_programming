@@ -8,12 +8,15 @@
 int main(void)
 {
 	long int fuck = 612852475143;
-	long int last, i;
+	long int last = fuck;
+	long int i = 3;
 
-	for (i = 3; i <= (fuck / 3); i += 2)
+	while (i < last)
 	{
-		if (fuck % i == 0)
-			last = i;
+		if (last % i == 0)
+			last /= i;
+		else
+			i++;
 	}
 	printf("%li\n", last);
 
