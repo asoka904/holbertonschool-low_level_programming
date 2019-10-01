@@ -14,5 +14,10 @@ int main(void)
 	str = "Holberton!";
 	len = _strlen(str);
 	printf("%d\n", len);
+
+	str = "\n";
+	len = _strlen(str);
+	printf("%d\n", len);
+
 	return (0);
 }
