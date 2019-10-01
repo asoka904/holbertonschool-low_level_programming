@@ -12,7 +12,7 @@ void print_rev(char *s)
 	while (*(s + c) != '\0')
 		c++;
 
-	while (c >= 0)
+	while (c > 0)
 	{
 		c--;
 		_putchar(*(s + c));
