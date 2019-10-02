@@ -15,7 +15,7 @@ int main(void)
 	printf("1, 2, ");
 	while (n <= 50)
 	{
-		printf("%ul", sum);
+		printf("%lu", sum);
 		if (n == 49)
 			break;
 		printf(", ");
