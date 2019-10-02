@@ -7,23 +7,23 @@
 
 void rev_string(char *s)
 {
-	int c = 0;
+	int a = 0, b;
+	char tmp;
 
-	while (*s != '\0')
+	while (s[a] != '\0')
 	{
-		s++;
-		c++;
+		a++;
+	}
+	b = 0;
+	a--;
+
+	while (b <= a)
+	{
+		tmp = s[a];
+		s[a] = s[b];
+		s[b] = tmp;
+		a--;
+		b++;
 	}
 
-	char *cp = malloc(c * sizeof(char));
-
-
-	s--;
-	while (c > 0)
-	{
-		_putchar(*s);
-		s--;
-		c--;
-	}
-	_putchar('\n');
 }
