@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _puts22 - Prints every other character of a string, starting with the first
+ * _puts - Prints every other character of a string, starting with the first
  * character, followed by a new line.
  * @str: String to print.
  */
