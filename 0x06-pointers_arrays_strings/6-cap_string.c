@@ -20,9 +20,9 @@ char *cap_string(char *s)
 			case ',':
 			case ';':
 			case '.':
-			case '\?':
+			case 63:
 			case '!':
-			case '\"':
+			case '"':
 			case '(':
 			case ')':
 			case '{':
