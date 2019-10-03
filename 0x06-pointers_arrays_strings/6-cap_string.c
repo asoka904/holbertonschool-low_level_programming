@@ -12,6 +12,8 @@ char *cap_string(char *s)
 
 	while (s[len] != '\0')
 	{
+		if (s[len] >= 'a' && s[len] <= 'z' && len == 0)
+			s[len] -= ' ';
 		switch (s[len - 1])
 		{
 			case ' ':
