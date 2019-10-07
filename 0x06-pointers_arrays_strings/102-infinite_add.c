@@ -37,13 +37,15 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 
 		if ((i == 0 && j == 0) && sum == 0)
 		{
-			r += size_r;
+			r = r + size_r;
+			printf("return fin de la suma\n");
 			return (r);
 		}
 	}
 
 	if (sum > 0 || (i > 0 || j > 0))
 		r = 0;
+	printf("return fin del buffer\n");
 
 	return (r);
 }
