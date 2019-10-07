@@ -18,7 +18,6 @@ char *_strchr(char *s, char c)
 			return (s + i);
 		}
 	}
-	printf("no encontrado\n");
 
 	return (0);
 }
