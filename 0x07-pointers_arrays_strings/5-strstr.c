@@ -37,13 +37,11 @@ char *compare(char *s1, char *s2)
 	int i;
 
 	/* OJO: si s1 llega al final y s2 no!! */
-	for (i = 0; s1[i] != '\0'; i++)
+	for (i = 0; s1[i] != '\0' && s2[i] != '\0'; i++)
 		if (s1[i] != s2[i])
 		{
 			return (NULL);
 		}
-	if (s2[i] != '\0')
-		return (NULL);
 
 	return (s1);
 }
