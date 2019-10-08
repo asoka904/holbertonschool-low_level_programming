@@ -24,6 +24,14 @@ char *_strstr(char *haystack, char *needle)
 	return (NULL);
 }
 
+/**
+  * compare - Compare two strings
+  * @s1: string
+  * @s2: string
+  *
+  * Return: Pointer to s1 if both strings are equal. NULL in otrher case.
+  */
+
 char *compare(char *s1, char *s2)
 {
 	int i;
