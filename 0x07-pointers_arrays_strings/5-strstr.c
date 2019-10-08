@@ -42,5 +42,7 @@ char *compare(char *s1, char *s2)
 		{
 			return (NULL);
 		}
+	if (s1[i] != '\0' || s2[i] != '\0')
+		return (NULL);
 	return (s1);
 }
