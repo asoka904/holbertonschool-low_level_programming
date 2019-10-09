@@ -24,7 +24,7 @@ int isroot(int n, int s)
 {
 	if (n < 0)
 		return (-1);
-	
+
 	if (n < s)
 		return (-1);
 
