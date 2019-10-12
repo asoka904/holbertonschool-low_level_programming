@@ -2,6 +2,8 @@
 
 /**
  * main - Program that prints the number of arguments passed into it.
+ * @argc: Number of arguments (including name of file).
+ * @argv: Arguments of the function
  *
  * Return: Always 0.
  */
