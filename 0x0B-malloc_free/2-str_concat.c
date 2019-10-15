@@ -1,25 +1,38 @@
 #include "holberton.h"
 /**
- * create_array - Creates an array of chars, and initializes it with a specific
- * char.
- * @size: size of the buffer to create
- * @c: Character to print in the buffer
+ * str_concat - Concatenates two strings.
+ * @s1: first string
+ * @s2: second string
  *
- * Return: Pointer to the array, or NULL if it fails
+ * Return: Pointer to a newly allocated space in memory which contains the
+ * contents of s1, followed by the contents of s2, and null terminated, or
+ * NULL if it fails
  */
-char *create_array(unsigned int size, char c)
+char *str_concat(char *s1, char *s2)
 {
-	unsigned int i;
+	int i, size1 = 0, size2 = 0;
 	char *ptr;
 
-	if (size == 0)
-		return (0);
-	ptr = malloc(sizeof(char) * size);
-	if (ptr == 0)
-		return (0);
+	if (s1 == NULL)
+		size1 = 0;
+	else
+		while (s1[size1] != 0)
+			size1++;
+	if (s2 == NULL)
+		size2 = 0;
+	else
+		while (s2[size2] != 0)
+			size2++;
 
-	for (i = 0; i < size; i++)
-		ptr[i] = c;
+	ptr = malloc(sizeof(char) * (size1 + size2 + 1));
+	if (ptr == NULL)
+		return (NULL);
+
+	for (i = 0; i < size1; i++)
+		ptr[i] = s1[i];
+	for (; i < size2 + size1; i++)
+		ptr[i] = s2[i - size1];
+	ptr[i] = '\0';
 
 	return (ptr);
 }
