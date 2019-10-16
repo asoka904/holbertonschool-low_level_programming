@@ -6,6 +6,11 @@
  */
 char **strtow(char *str)
 {
+	char **ptr = NULL;
+
 	if (str == NULL || str == "")
 		return (NULL);
+
+
+	return (ptr);
 }
