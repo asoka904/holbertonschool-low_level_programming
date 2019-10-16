@@ -1,3 +1,4 @@
+#include "holberton.h"
 /**
  * strtow - Splits a string into words.
  * @str: string to split
@@ -8,7 +9,7 @@ char **strtow(char *str)
 {
 	char **ptr = NULL;
 
-	if (str == NULL || str == "")
+	if (str == NULL || *str == '\0')
 		return (NULL);
 
 
