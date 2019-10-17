@@ -35,10 +35,6 @@ int main(void)
 	concat = string_nconcat("Holberton ", ":D", 6);
 	printf("%s\n", concat);
 
-
-
-
-
 	free(concat);
 	return (0);
 }
