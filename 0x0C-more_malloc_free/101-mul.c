@@ -3,11 +3,12 @@
 #include <stdlib.h>
 
 /**
- * main - check the code for Holberton School students.
- *
+ * main - Program that prints its name
+ * @argc: Number of arguments (including name of file).
+ * @argv: Arguments of the function
  * Return: Always 0.
  */
-int main(int argc, char *argv[])
+int main(int argc, char *argv[] __attribute__((unused)))
 {
 	if (argc != 3)
 	{
@@ -15,6 +16,6 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	
+
 	return (0);
 }
