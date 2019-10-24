@@ -33,6 +33,13 @@ int main(int argc, char *argv[])
 	operator = argv[2];
 	b = atoi(argv[3]);
 	operation = get_op_func(operator);
+
+	if (operation == NULL)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+
 	result = (*operation)(a, b);
 	printf("%i\n", result);
 
