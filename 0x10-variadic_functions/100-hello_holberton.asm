@@ -1,5 +1,6 @@
-section .text
+segment .text
 	global	main
+	txt db "Hello, Holberton", 0x0A
 
 main:
 	mov	rax, 0x01
@@ -11,5 +12,3 @@ main:
 	mov rdi, 0x00
 	syscall
 
-section .data
-	txt db "Hello, Holberton", 0x0A
