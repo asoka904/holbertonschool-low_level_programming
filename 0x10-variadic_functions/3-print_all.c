@@ -14,12 +14,9 @@ void print_all(const char * const format, ...)
 	char *s;
 	char option;
 
-	if (format == NULL || format == '\0')
-		return;
-
 	va_start(list, format);
 
-	while (format[i] != '\0')
+	while (format[i] != '\0' && format == NULL)
 	{
 		option = format[i];
 		switch (option)
