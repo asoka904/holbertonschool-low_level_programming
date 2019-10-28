@@ -12,14 +12,14 @@ void print_all(const char * const format, ...)
 	int i = 0;
 	va_list list;
 	char *s;
-	char option;
+	char opt;
 
 	va_start(list, format);
 
-	while (format[i] != '\0' && format == NULL)
+	while (format[i] != '\0' && format != NULL)
 	{
-		option = format[i];
-		switch (option)
+		opt = format[i];
+		switch (opt)
 		{
 			case 'c':
 				printf("%c", va_arg(list, int));
@@ -32,15 +32,13 @@ void print_all(const char * const format, ...)
 				break;
 			case 's':
 				s = va_arg(list, char *);
-				if (s == NULL)
-					printf("(nil)");
-				else
-					printf("%s", s);
+				if (!s)
+					s = "(nil)";
+				printf("%s", s);
 				break;
 		}
 
-		if (format[i + 1] &&
-			(option == 'c' || option == 'i' || option == 'f' || option == 's'))
+		if (format[i + 1] && (opt == 'c' || opt == 'i' || opt == 'f' || opt == 's'))
 			printf(", ");
 		i++;
 	}
