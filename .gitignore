@@ -57,3 +57,4 @@ exe
 quote
 a.out
 *.swp
+*#
