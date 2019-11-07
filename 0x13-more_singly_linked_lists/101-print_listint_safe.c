@@ -20,6 +20,7 @@ size_t print_listint_safe(const listint_t *head)
 		if (dif < 1)
 		{
 			printf("-> [%p] %i\n", (void *)head, head->n);
+			count++;
 			break;
 		}
 	}
