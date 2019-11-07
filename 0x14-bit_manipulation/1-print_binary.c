@@ -13,7 +13,7 @@ void print_binary(unsigned long int n)
 		_putchar(48);
 		return;
 	}
-	
+
 	for (; cpy; i++)
 		cpy >>= 1;
 	mask <<= --i;
