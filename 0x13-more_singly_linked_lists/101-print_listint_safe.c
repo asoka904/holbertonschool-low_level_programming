@@ -9,13 +9,22 @@
 size_t print_listint_safe(const listint_t *head)
 {
 	unsigned int count = 0;
+	int dif;
 
-	if (head == NULL)
-		exit(98);
 	for (; head != NULL; count++)
 	{
 		printf("[%p] %i\n", (void *)head, head->n);
-		head = head->next;
+		
+		dif = head - head->next;
+		if (dif > 0)
+		{
+			head = head->next;
+		}
+		else
+		{
+			printf("-> [%p] %i\n", (void *)head->next, head->next->n);
+			break;
+		}
 	}
 
 	return (count);
