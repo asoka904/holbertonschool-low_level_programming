@@ -9,5 +9,9 @@
  */
 listint_t *find_listint_loop(listint_t *head)
 {
+	int a;
+
+	a = head->n;
+	a++;
 	return (NULL);
 }
