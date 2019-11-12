@@ -9,9 +9,16 @@
  */
 listint_t *find_listint_loop(listint_t *head)
 {
-	int a;
+	int dif;
 
-	a = head->n;
-	a++;
+	while (head != NULL)
+	{
+		dif = head - head->next;
+		if (dif < 1)
+		{
+			return (head->next);
+		}
+	}
+
 	return (NULL);
 }
