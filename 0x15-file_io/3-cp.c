@@ -7,12 +7,7 @@
  *
  * Return: 0 in success.
  */
-int main(int ac, char *av[])
+int main()
 {
-	if (argc != 3)
-	{
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-		exit(97);
-	}
 	return (0);
 }
