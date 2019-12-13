@@ -8,9 +8,9 @@
  */
 size_t print_dlistint(const dlistint_t *h)
 {
-    int nodes = 0;
+	int nodes = 0;
 
-    for (; h != NULL; h = h->next, nodes++)
-        printf("%i\n", h->n);
-    return (nodes);
+	for (; h != NULL; h = h->next, nodes++)
+		printf("%i\n", h->n);
+	return (nodes);
 }
