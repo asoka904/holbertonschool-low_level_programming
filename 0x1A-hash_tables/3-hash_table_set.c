@@ -10,5 +10,8 @@
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
+	ht = ht;
+	key = key;
+	value = value;
 	return (0);
 }
