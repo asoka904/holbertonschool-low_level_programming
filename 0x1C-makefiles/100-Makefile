@@ -5,9 +5,10 @@ OBJ = $(SRC:.c=.o)
 NAME = holberton
 RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
+CFLAGS = ${CFLAGS}
 
 all: m.h $(SRC) $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+	$(CC) ${CFLAGS} $(OBJ) -o $(NAME)
 
 clean:
 	$(RM) *~ $(NAME)
